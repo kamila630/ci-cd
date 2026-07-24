@@ -15,7 +15,8 @@ jobs:
             with:
               java-version: '17'
               distribution: 'temurin'
-
+          - name: Add permission
+            run: chmod +x ./mvnw
           - name: Build Application
             run: ./mvnw clean package
           
